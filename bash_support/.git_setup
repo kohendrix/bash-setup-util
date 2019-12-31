@@ -1,0 +1,35 @@
+# Git branch name display
+git_branch() { 
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w $(git_branch) \n\[\033[01;34m\]\$\[\033[00m\] '
+
+# Git auto completion
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+
+
+# Aliases
+alias gpull="git pull"
+alias gpullr="git pull --rebase"
+alias gpush="git push"
+alias gpushf="git push --force-with-lease"
+alias gcm="git commit -m"
+alias gca="git commit --amend"
+alias gs="git status"
+alias gaa="git add -A"
+alias ga="git add"
+alias gdf="git diff"
+alias branches="git branch -a"
+alias cleanbr="sh $HOME/util/scripts/clean_branches.sh"
+alias gco="git checkout"
+alias grb="git rebase"
+alias grbc="git rebase --continue"
+alias grbs="git rebase --skip"
+alias prunelist="git remote prune origin --dry-run"
+alias prune="git remote prune origin"
+alias stashes="git stash list"
+alias unstash="git stash apply"
+alias stashd="git stash drop"
+alias stash="git stash -u"
+

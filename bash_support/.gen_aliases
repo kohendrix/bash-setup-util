@@ -1,0 +1,17 @@
+# Aliases =============================
+
+# commands extensions
+alias ll="ls -la"
+alias checkport:="lsof -i:"
+
+# VS Code
+alias vsc-init="sh $HOME/util/scripts/initialize-vscode-workspace.sh"
+
+# ssh-keygen
+alias rsa-keygen="ssh-keygen -t rsa -b 4096 -C"
+
+# React
+alias reactapp="yarn create react-app"
+
+# Yarn
+alias yw="yarn workspace"
