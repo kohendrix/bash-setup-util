@@ -2,7 +2,7 @@
 
 # commands extensions
 alias ll="ls -la"
-alias checkport:="lsof -i:"
+alias checkport="lsof -i"
 
 # VS Code
 alias vsc-init="sh $HOME/util/scripts/initialize-vscode-workspace.sh"
