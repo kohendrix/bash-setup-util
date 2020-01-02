@@ -34,6 +34,6 @@ fi
 
 if [ -f $PWD/$PROJECT_DIR/main.cpp ]
 then
-  gcc $PWD/$PROJECT_DIR/main.cpp -o $PWD/$PROJECT_DIR/build/main.out
+  g++ $PWD/$PROJECT_DIR/main.cpp -o $PWD/$PROJECT_DIR/build/main.out
   echo "compiled $PROJECT_DIR/main.cpp"
 fi
