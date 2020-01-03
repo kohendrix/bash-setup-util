@@ -2,6 +2,14 @@
 
 # requires jq installed
 
+# check if it's a git directory
+if ! [ -d .git ]
+then
+  echo "This is not a git directory."
+  exit 1
+fi
+
+
 CONFIG_PATH=$HOME/util/config/git_users.json
 
 # check file existence
