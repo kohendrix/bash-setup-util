@@ -9,6 +9,7 @@ alias vsc-init="sh $HOME/util/scripts/initialize-vscode-workspace.sh"
 
 # ssh-keygen
 alias rsa-keygen="ssh-keygen -t rsa -b 4096 -C"
+alias ed-keygen="ssh-keygen -o -t ed25519 -C"
 
 # React
 alias reactapp="yarn create react-app"
