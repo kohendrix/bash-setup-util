@@ -14,6 +14,10 @@ alias ed-keygen="ssh-keygen -o -t ed25519 -C"
 # React
 alias reactapp="yarn create react-app"
 
+# Cypress
+alias cy="yarn cypress open"
+alias cyr="yarn cypress run"
+
 # Yarn
 alias yw="yarn workspace"
 
