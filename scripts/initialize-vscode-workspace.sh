@@ -16,7 +16,7 @@ load_user_settings_prompt(){
     do
       read -p "Do you wish to inherit the user settings into initial workspace setting? (y/n) : " yn
       case $yn in
-          [Yy]*) sudo -k cp $ORIGINAL_FILE $SETTINGS_FILE; break;;
+          [Yy]*) sudo -k cp "$ORIGINAL_FILE" $SETTINGS_FILE; break;;
           [Nn]*) break;;
           * ) echo "Answer in y/n please."
       esac
@@ -35,7 +35,7 @@ create_vscode_settings() {
 
   if [[ $(uname) == "Darwin" ]]
   then
-    load_user_settings_prompt $HOME/Library/ApplicationSupport/Code/User/settings.json
+    load_user_settings_prompt "$HOME/Library/Application Support/Code/User/settings.json"
   elif [[ $(uname) == "Linux" ]]
   then
     load_user_settings_prompt $HOME/.config/Code/User/settings.json
