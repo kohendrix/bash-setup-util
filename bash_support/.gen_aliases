@@ -16,7 +16,7 @@ alias reactapp="yarn create react-app"
 
 # Cypress
 alias cy="yarn cypress open"
-alias cyr="yarn cypress run"
+alias cyr="yarn cypress run -b chrome --headless"
 
 # C++
 alias ccomp="sh $HOME/util/scripts/gcc-compile.sh"
