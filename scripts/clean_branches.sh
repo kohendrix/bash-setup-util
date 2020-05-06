@@ -111,6 +111,7 @@ delete_locals_with_no_origin_prompt(){
 # process start here
 echo "CLEAN UP BRANCHES\n"
 git checkout master
+git fetch --all
 
 # local origin/ branches
 prune_prompt
