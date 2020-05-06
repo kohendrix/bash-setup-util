@@ -21,3 +21,6 @@ alias cyr="yarn cypress run -b chrome --headless"
 # C++
 alias ccomp="sh $HOME/util/scripts/gcc-compile.sh"
 alias crun="sh $HOME/util/scripts/c-run.sh"
+
+# docker
+alias dc="docker-compose"
