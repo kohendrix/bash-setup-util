@@ -64,7 +64,7 @@ delete_locals_origin_gone_prompt(){
         do
             read -p "Do you wish to delete all these branches, some, or nothing? (a/s/n) : " yn
             case $yn in
-                [Aa]* ) echo "Deleting all..."; echo $BRANCHES | xargs git branch -d ; break;;
+                [Aa]* ) echo "Deleting all..."; echo $BRANCHES | xargs git branch -D ; break;;
                 [Ss]* ) 
                     for BRANCH in $BRANCHES
                     do 
