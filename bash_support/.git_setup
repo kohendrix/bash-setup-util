@@ -17,6 +17,7 @@ else
 fi
 
 # Aliases
+alias glog="git log"
 alias gpull="git pull"
 alias gpullr="git pull --rebase"
 alias gpush="git push"
