@@ -41,5 +41,5 @@ alias unstash="git stash apply"
 alias stashp="git stash pop"
 alias stashd="git stash drop"
 alias stash="git stash -u"
-alias guser="sh $HOME/util/scripts/set_git_user.sh"
+alias guser="sh $HOME/bash-setup-util/scripts/set_git_user.sh"
 

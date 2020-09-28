@@ -10,7 +10,7 @@ then
 fi
 
 
-CONFIG_PATH=$HOME/util/config/git_users.json
+CONFIG_PATH=$HOME/bash-setup-util/config/git_users.json
 
 # check file existence
 if ! [ -f $CONFIG_PATH ]
