@@ -24,3 +24,7 @@ alias crun="sh $HOME/util/scripts/c-run.sh"
 
 # docker
 alias dc="docker-compose"
+
+# git
+alias guser="sh $HOME/bash-setup-util/scripts/set_git_user.sh"
+alias cleanbr="sh $HOME/bash-setup-util/scripts/clean_branches.sh"
